@@ -5,6 +5,7 @@ import 'data/repository.dart';
 import 'state/collection_store.dart';
 import 'screens/compare_screen.dart';
 import 'screens/digimon_list_screen.dart';
+import 'screens/elements_screen.dart';
 import 'screens/moves_list_screen.dart';
 
 void main() {
@@ -98,6 +99,7 @@ class _HomeShellState extends State<HomeShell> {
           DigimonListScreen(repo: widget.repo),
           MovesListScreen(repo: widget.repo),
           CompareScreen(repo: widget.repo),
+          const ElementsScreen(),
         ],
       ),
       bottomNavigationBar: NavigationBar(
@@ -115,6 +117,10 @@ class _HomeShellState extends State<HomeShell> {
           NavigationDestination(
             icon: Icon(Icons.compare_arrows),
             label: 'Comparar',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.shield_outlined),
+            label: 'Elementos',
           ),
         ],
       ),

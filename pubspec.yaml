@@ -64,6 +64,7 @@ flutter:
     - assets/data/digimon.json
     - assets/icons/
     - assets/elements/
+    - assets/attributes/
     - assets/images/
 
   # To add assets to your application, add an assets section, like this:
