@@ -12,6 +12,7 @@ Digidex personal y **offline** para *Digimon Story: Cyber Sleuth* y *Hacker's Me
 - **Ficha** con artwork, stats base por nivel, movimientos con su efecto, evoluciones y devoluciones con sus requisitos, y navegación al Digimon anterior/siguiente y botón de inicio.
 - **Movimientos** (492): listado con buscador y filtro por elemento; al abrir uno se ve qué hace y qué Digimon lo aprenden y en qué nivel.
 - **Comparador** de stats entre dos Digimon.
+- **Exportar / importar** favoritos y registrados (menú ⋮ del listado): se copian como texto al portapapeles y se pueden pegar de vuelta, combinando o reemplazando. Sirve para no perderlos al reinstalar.
 - Descripciones de Digimon, efectos de habilidades y de movimientos **traducidos al español**; nombres de Digimon, ataques, habilidades y términos del juego se dejan en inglés.
 
 ## Datos
@@ -32,7 +33,7 @@ Imágenes: `assets/icons/` (ícono por Digimon), `assets/images/` (artwork de la
 - Los stats y movimientos provienen de una wiki que documenta *Hacker's Memory*; para un mismo Digimon podrían diferir un poco del *Cyber Sleuth* original.
 - Las traducciones son automáticas y solo se revisaron parcialmente; algunas frases del texto original son confusas y la traducción las respeta.
 - Algunas imágenes con resplandores o sombras pintadas se muestran sobre una tarjeta blanca (`imageOpaque: true`) en vez de con el fondo transparente.
-- Los favoritos y registrados se guardan en el dispositivo (`shared_preferences`): **se pierden al desinstalar la app**.
+- Los favoritos y registrados se guardan en el dispositivo (`shared_preferences`): **se pierden al desinstalar la app**. Para conservarlos, exportalos antes desde el menú ⋮ y volvé a importarlos después.
 
 ## Cómo correrlo
 

@@ -5,6 +5,7 @@ import '../data/models.dart';
 import '../data/repository.dart';
 import '../data/sorting.dart';
 import '../state/collection_store.dart';
+import '../widgets/backup_dialogs.dart';
 import '../widgets/digimon_card.dart';
 import '../widgets/element_icon.dart';
 import 'digimon_detail_screen.dart';
@@ -298,6 +299,24 @@ class _DigimonListScreenState extends State<DigimonListScreen> {
               label: Text('$_activeFilters'),
               child: const Icon(Icons.filter_list),
             ),
+          ),
+          PopupMenuButton<String>(
+            tooltip: 'Más opciones',
+            onSelected: (v) {
+              final store = context.read<CollectionStore>();
+              if (v == 'export') exportCollection(context, store);
+              if (v == 'import') importCollection(context, store, widget.repo);
+            },
+            itemBuilder: (_) => const [
+              PopupMenuItem(
+                value: 'export',
+                child: Text('Exportar favoritos y registrados'),
+              ),
+              PopupMenuItem(
+                value: 'import',
+                child: Text('Importar favoritos y registrados'),
+              ),
+            ],
           ),
         ],
         bottom: PreferredSize(
