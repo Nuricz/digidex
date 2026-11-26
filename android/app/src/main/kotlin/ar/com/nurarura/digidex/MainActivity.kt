@@ -1,4 +1,4 @@
-package ar.com.freelogic.digimon_pokedex
+package ar.com.nurarura.digidex
 
 import io.flutter.embedding.android.FlutterActivity
 
